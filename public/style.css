@@ -1,0 +1,17 @@
+input:checked + p {
+    text-decoration: line-through;
+}
+
+a{
+    text-decoration: none;
+    color:red;
+}
+
+nav{
+    display: flex;
+    gap: 2%;
+}
+
+.item{
+    display: flex;
+}

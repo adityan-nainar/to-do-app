@@ -1,0 +1,22 @@
+<%-include("partials/header.ejs")  -%>
+
+<h1> Work To Do</h1>
+
+    <% if(locals.taskW){  %>
+        <% for(var i=0; i<taskW.length; i++){%>
+        <div class="item">
+        <input type="checkbox" >
+        <p>   <%= taskW[i] %>  </p>
+        </div>
+      <% }}else{ %>
+        <h3>Enter first task</h3>
+      <% } %>
+  
+<form action="/work/submit" method="POST">
+    <input type="text" name="taskName" placeholder="Enter a task" autocomplete="off">
+    <input type="submit" value="OK">
+  </form>
+
+
+
+<%-include("partials/footer.ejs")  -%>
