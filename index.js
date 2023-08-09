@@ -12,11 +12,11 @@ let taskListPersonal = [];
 let taskListWork = [];
 
 app.get("/", (req, res)=>{
-    res.render("index.ejs");
+    res.render("index.ejs", {taskP : taskListPersonal});
 })
 
 app.get("/work", (req, res)=>{
-    res.render("work.ejs");
+    res.render("work.ejs", {taskW : taskListWork});
 })
 
 app.post("/submit", (req, res)=>{

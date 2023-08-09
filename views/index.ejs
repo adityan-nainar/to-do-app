@@ -2,7 +2,7 @@
 
 <h1> Personal To Do</h1>
 
-  <% if(app.locals.taskP){  %>
+  <% if((locals.taskP.length) !== 0 ){  %>
       <% for(var i=0; i<taskP.length; i++){%>
       <div class="item">
       <input type="checkbox" >
@@ -12,8 +12,6 @@
       <h3>Enter first task</h3>
     <% } %>
   
-
-
 <form action="/submit" method="POST">
     <input type="text" name="taskName" placeholder="Enter a task" autocomplete="off">
     <input type="submit" value="OK">

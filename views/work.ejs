@@ -2,15 +2,15 @@
 
 <h1> Work To Do</h1>
 
-    <% if(locals.taskW){  %>
+    <% if(locals.taskW.length !== 0){  %>
         <% for(var i=0; i<taskW.length; i++){%>
-        <div class="item">
-        <input type="checkbox" >
-        <p>   <%= taskW[i] %>  </p>
+            <div class="item">
+            <input type="checkbox" >
+            <p>   <%= taskW[i] %>  </p>
         </div>
-      <% }}else{ %>
-        <h3>Enter first task</h3>
-      <% } %>
+        <% }}else{ %>
+            <h3>Enter first task</h3>
+        <% } %>
   
 <form action="/work/submit" method="POST">
     <input type="text" name="taskName" placeholder="Enter a task" autocomplete="off">
