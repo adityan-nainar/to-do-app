@@ -1,7 +1,8 @@
 <%-include("partials/header.ejs")  -%>
 
-<h1> Personal To Do</h1>
-
+<h2> Personal To Do</h2>
+<div class="container">
+  <div class="taskList">
   <% if((locals.taskP.length) !== 0 ){  %>
       <% for(var i=0; i<taskP.length; i++){%>
       <div class="item">
@@ -16,7 +17,7 @@
     <input type="text" name="taskName" placeholder="Enter a task" autocomplete="off">
     <input type="submit" value="OK">
   </form>
-
-
+</div>
+</div>
 
 <%-include("partials/footer.ejs")  -%>
