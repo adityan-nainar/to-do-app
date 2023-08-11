@@ -17,15 +17,20 @@ nav{
 }
 
 h1{
+    margin-bottom: 0%;
     display: flex;
     justify-content: center;
+    height: fit-content;
     font-size: 5em;
+    font-family: 'Borel', cursive;
 }
 
 h2{
+    margin-top: 0;
     display: flex;
     justify-content: center;
     font-size: 3em;
+    font-family: 'Rubik', sans-serif;
 }
 
 .taskList{
